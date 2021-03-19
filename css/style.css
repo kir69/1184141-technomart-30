@@ -92,11 +92,7 @@ body {
 
 .logo {
 	background-color: #ee3643;
-	box-shadow: inset 0 -5px 0 0 rgba(0, 0, 0, 0.24);
-}
-
-.header-logo {
-	height: 47px;
+	box-shadow: 0 4px 0 0 #b52933;
 }
 
 .header-logo:hover {
@@ -174,12 +170,11 @@ body {
 }
 
 .header-top a:first-child {
-	display: block;
-	position: relative;
-	padding-top: 13px;
-	padding-right: 56px;
-	padding-bottom: 15px;
-	padding-left: 55px;
+	display: flex;
+	align-items: center;
+  justify-content: center;
+  width: 220px;
+
 }
 
 .bookmarks {
@@ -297,13 +292,13 @@ body {
 .header-middle {
 	display: flex;
 	justify-content: flex-start;
-	margin-top: 45px;
-	margin-bottom: 42px;
+	padding-top: 45px;
+	padding-bottom: 42px;
 }
 
 .title {
   margin: 0;
-  margin-left: 30px;
+  padding-left: 30px;
 
   width: 197px;
 
@@ -324,6 +319,7 @@ body {
 
   font-size: 21px;
 	line-height: 30px;
+  font-weight: 700;
 }
 
 .contacts-phone a {
@@ -458,13 +454,19 @@ body {
 	padding-left: 28px;
 }
 
+.list-navigation li:first-child {
+  padding-left: 25px;
+}
+
 .list-navigation li:first-child a {
-	margin-left: 25px;
   padding-left: 28px;
 }
 
+.list-navigation li:last-child  {
+  padding-right: 25px;
+}
+
 .list-navigation li:last-child a {
-	margin-right: 25px;
   padding-right: 28px;
 }
 
@@ -2312,11 +2314,11 @@ body {
 }
 
 .logo-footer a {
-	display: block;
-	padding-top: 20px;
-	padding-right: 38px;
-	padding-bottom: 18px;
-	padding-left: 41px;
+	display: flex;
+	align-items: center;
+  justify-content: center;
+  width: 220px;
+  height: 64px;
 }
 
 .footer-menu,
@@ -2340,7 +2342,7 @@ body {
 }
 
 .footer-list a {
-  margin-left: 60px;
+  margin-left: 58px;
 
 	color: #ffd180;
 }
@@ -2370,13 +2372,11 @@ body {
 
 .footer-adress {
 	margin: 0;
-	margin-right: 91px;
-	margin-left: 3px;
+	margin-right: 86px;
   padding: 0;
+  padding-left: 3px;
 
-  width: 323px;
-
-	color: #f3f7f9;
+  color: #f3f7f9;
 }
 
 .footer-adress a {
