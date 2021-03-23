@@ -221,11 +221,12 @@ body {
   background-color: #293449;
 }
 
-
-
 .basket-drop {
-  padding-left: 50px;
-  padding-right: 24px;
+  margin-left: 13px;
+  padding-left: 35px;
+  padding-right: 21px;
+
+  background-color: #ee3643;
 }
 
 .basket::before {
@@ -247,7 +248,7 @@ body {
 .basket-drop::before {
   content: "";
   position: absolute;
-  left: 18px;
+  left: 12px;
   top: 12px;
 
   width: 15px;
@@ -265,10 +266,7 @@ body {
   opacity: 1;
 }
 
-.bookmarks:hover,
-.basket:hover {
-  background-color: #212a3a;
-}
+
 
 .bookmarks:active::before,
 .basket:active::before {
@@ -280,10 +278,6 @@ body {
   background-color: #161d29;
 
   color: rgba(255, 255, 255, 0.6);
-}
-
-.basket-drop {
-  background-color: #ee3643;
 }
 
 .link-order {
@@ -556,7 +550,7 @@ body {
 .user-name-logout {
   position: absolute;
   top: 14px;
-  left: 269px;
+  left: 261px;
 }
 
 .user-name-link:hover {
