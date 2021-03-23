@@ -91,7 +91,7 @@ body {
       -ms-flex-pack: center;
           justify-content: center;
 
-  width: 1200px;
+  width: 100%;
   height: 42px;
 
   background-color: #293449;
@@ -1740,7 +1740,7 @@ body {
 .filter-checkbox:checked+label::after {
   position: absolute;
   content: "";
-  left: -34px;
+  left: -30px;
 
   width: 27px;
   height: 23px;
