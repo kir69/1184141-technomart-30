@@ -380,7 +380,9 @@ body {
 }
 
 .user {
+  display: flex;
   position: relative;
+  height: 45px;
   margin-left: 69px;
 
   color: #000000;
@@ -404,33 +406,34 @@ body {
   fill: #c5c5c5;
 }
 
-.btn-enter,
-.btn-reg {
+.user .btn-enter,
+.user .btn-reg {
   font-size: 21px;
   line-height: 21px;
+  color: #000000;
 
   background-color: #ffffff;
 }
 
 .btn-reg {
-  margin-left: 4px;
+  width: 150px;
+  margin-left: 11px;
   padding-top: 13px;
   padding-bottom: 11px;
 
-  width: 150px;
-
   border: none;
+
+  text-align: center;
 }
 
 .btn-enter {
+  display: block;
   position: relative;
   padding: 0;
   padding-top: 13px;
   padding-bottom: 11px;
   padding-left: 44px;
   padding-right: 27px;
-
-  width: 121px;
 
   border: none;
 }
@@ -668,24 +671,7 @@ body {
   background-color: #FFBF47;
 }
 
-.card-1 .flag {
-  position: absolute;
-  top: 0;
-  right: 0;
-  overflow: hidden;
-  text-indent: -1000px;
-  z-index: 888;
-
-  width: 70px;
-  height: 70px;
-
-}
-
-.card-1 .flag-new {
-  background: url("../img/new-flag.png");
-}
-
-.card-1::before {
+.card-1::after {
   content: "";
   position: absolute;
   top: 31px;
@@ -704,7 +690,7 @@ body {
   background-color: #3BBCE3;
 }
 
-.card-2::before {
+.card-2::after {
   content: "";
   position: absolute;
   top: 34px;
@@ -724,7 +710,7 @@ body {
   background-color: #DC91D8;
 }
 
-.card-3::before {
+.card-3::after {
   content: "";
   position: absolute;
   top: 31px;
@@ -744,7 +730,7 @@ body {
   background-color: #8ED78F;
 }
 
-.card-4::before {
+.card-4::after {
   content: "";
   position: absolute;
   top: 26px;
@@ -765,7 +751,7 @@ body {
   background-color: #FFC047;
 }
 
-.card-5::before {
+.card-5::after {
   content: "";
   position: absolute;
   top: 32px;
@@ -856,6 +842,7 @@ body {
   height: 266px;
 
   background-image: url("../img/slide-1.jpg");
+  background-color: #000000;
 }
 
 .slide-2 {
@@ -863,6 +850,7 @@ body {
   height: 266px;
 
   background-image: url("../img/slide-2.jpg");
+  background-color: #000000;
 }
 
 
@@ -989,7 +977,8 @@ body {
   margin-top: 20px;
 }
 
-.popular-item-card .flag {
+.flag-new::before {
+  content: "";
   position: absolute;
   top: 0px;
   right: 0px;
@@ -999,11 +988,10 @@ body {
 
   width: 70px;
   height: 70px;
-}
-
-.popular-item-card .flag-new {
   background: url("../img/new-flag.png");
 }
+
+
 
 .popular-item-card {
   position: relative;
@@ -1394,6 +1382,7 @@ body {
 .link-company,
 .btn-feedback {
   display: inline-block;
+  vertical-align: baseline;
 
   font-size: 14px;
   line-height: 18px;
@@ -1402,7 +1391,6 @@ body {
 
   background-color: #ee3643;
 
-  border-radius: 3px;
   border: 0;
 }
 
@@ -2788,7 +2776,7 @@ body {
 }
 
 .btn-background {
-  margin-top: 40px;
+  margin-top: 28px;
 
   width: 620px;
 
