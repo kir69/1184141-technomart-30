@@ -380,6 +380,8 @@ body {
 }
 
 .user {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   position: relative;
   height: 45px;
@@ -1752,7 +1754,7 @@ body {
   border-color: #b5b5b5;
 }
 
-.filter-checkbox:focus+label {
+.filter-checkbox:focus+label::before {
   border-color: #000000;
 }
 
